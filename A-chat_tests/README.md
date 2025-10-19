@@ -13,15 +13,18 @@
 
 - Аутентификация и подтверждение пользователей (`test_auth.py`)
 - Управление соединениями и подключениями WebSocket (`test_connection.py`, `test_connection_without_token.py`)
-- Создание и управление групповыми чатами (`test_create_group.py`, `test_websocket_create_group.py`)
-- Получение списка чатов и информации о чатах (`test_get_chats.py`, `test_get_chat_info.py`, `test_websocket_get_chats.py`)
+- Создание и управление групповыми чатами (`test_create_group.py`, `test_create_group.py`)
+- Получение списка чатов и информации о чатах (`test_get_chats.py`, `test_get_chat_info.py`, `test_get_chats.py`)
 - Отправка сообщений и работа с сообщениями (включая пересылку и ответы)  
-  (`test_send_message.py`, `test_forward_message_to_user.py`, `test_reply_message.py`, `test_response_message.py`, `test_websocket_send_message.py`)
+  (`test_send_message.py`, `test_forward_message_to_user.py`, `test_reply_message.py`, `test_response_message.py`, `test_send_message.py`)
 - Получение списка сообщений и их обработка (`test_get_messages.py`)
 - Проверка профиля пользователя (`test_user_profile.py`, `test_api_tests/test_user_profile.py`)
 - Инициация вызовов (`test_call_initiation.py`)
-- Работа с WebSocket-соединениями без токена (`test_websocket_connection_without_token.py`)
-- Общие WebSocket-тесты и сценарии (`test_ws.py`)
+- Работа с WebSocket-соединениями без токена (`test_connection_without_token.py`)
+- Общие WebSocket-тесты и сценарии (`test_ws_connection.py`)
+- Загрузка файла (`test_file_upload.py`)
+- Добавление контакта (`test_add_contact.py`)
+- Получение списка контактов (`test_get_contacts_list.py`)
 
 
 ## Структура проекта
