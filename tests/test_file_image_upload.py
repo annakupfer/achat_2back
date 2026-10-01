@@ -7,8 +7,9 @@ import tests.utils.configuration as configuration
 
 def test_file_image_upload(access_token):
     filename = "test_image.jpg"
-    current_dir = Path(__file__).parent
-    file_path = current_dir / "assets" / filename
+
+    project_dir = Path(__file__).parent.parent
+    file_path = project_dir / "assets" / filename
 
     url = configuration.BASE_URL + configuration.FILE_UPLOAD_PATH
 
@@ -26,9 +27,16 @@ def test_file_image_upload(access_token):
             "positionY": "0.0"
         }
 
-        response = requests.post(url, headers=headers, files=files, data=data)
+        response = requests.post(
+            url,
+            headers=headers,
+            files=files,
+            data=data
+        )
 
     assert response.status_code == 200
+
     json_data = response.json()
+
     assert "url" in json_data
     assert json_data["filename"] == filename
