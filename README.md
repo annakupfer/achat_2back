@@ -21,7 +21,6 @@
 - Проверка профиля пользователя (`test_user_profile.py`, `test_api_tests/test_user_profile.py`)
 - Инициация вызовов (`test_call_initiation.py`)
 - Работа с WebSocket-соединениями без токена (`test_connection_without_token.py`)
-- Общие WebSocket-тесты и сценарии (`test_ws_connection.py`)
 - Загрузка файла (`test_file_upload.py`)
 - Добавление контакта (`test_add_contact.py`)
 - Получение списка контактов (`test_get_contacts_list.py`)
@@ -29,7 +28,6 @@
 
 ## Структура проекта
 
-- `api/` — клиентские модули для взаимодействия с backend.
 - `tests/` — директория с тестовыми сценариями.
 - `utils/` — вспомогательные модули и настройки.
 - `venv/` — виртуальное окружение Python (не включается в репозиторий).
